@@ -26,3 +26,102 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+body,
+html {
+	background-color: var(--clr-stone-100);
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.container {
+	background-color: var(--clr-white);
+	max-width: 700px;
+	height: auto;
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+h1,
+h3 {
+	font-family: var(--ff-headings);
+	font-weight: var(--ff-headings);
+}
+p,
+ul,
+ol {
+	font-family: var(--ff-body);
+}
+
+h1 {
+	color: var(--clr-stone-900);
+	line-height: 3rem;
+}
+h3 {
+	color: var(--clr-brown-800);
+}
+.dish-name > p {
+	padding-bottom: 1rem;
+}
+.prep-time {
+	background-color: var(--clr-rose-50);
+	padding: 1.2rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+.prep-time h4 {
+	color: var(--clr-rose-800);
+	font-family: var(--ff-body);
+	padding-bottom: 0.5em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+	line-height: 1.5;
+}
+
+ul > li::before {
+	content: "\2022";
+	font-size: 1em;
+	color: var(--clr-rose-800);
+	margin-right: 1em;
+	display: flex;
+	align-items: center;
+}
+span {
+	font-weight: var(--fw-body-600);
+	margin-right: 0.2em;
+}
+.ingredients ul {
+	padding: 1.2rem;
+}
+.instructions {
+	padding: 1.2rem 0 1.2rem 0;
+}
+ol {
+	padding: 1rem;
+}
+ol li {
+	line-height: 1.5;
+	padding: 0.3em 0;
+}
+ol li::marker {
+	color: var(--clr-rose-800);
+	font-weight: var(--fw-body-600);
+	padding-left: 0.5em;
+}
