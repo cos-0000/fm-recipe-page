@@ -58,7 +58,8 @@ h3 {
 }
 p,
 ul,
-ol {
+ol,
+table {
 	font-family: var(--ff-body);
 }
 
@@ -108,20 +109,41 @@ span {
 	margin-right: 0.2em;
 }
 .ingredients ul {
-	padding: 1.2rem;
+	padding: 1.2rem 0;
 }
 .instructions {
-	padding: 1.2rem 0 1.2rem 0;
+	padding: 1.2rem 0;
 }
-ol {
+/* ol {
 	padding: 1rem;
 }
 ol li {
 	line-height: 1.5;
 	padding: 0.3em 0;
+	list-style: none;
+	counter-increment: list-counter;
+	display: flex;
+	align-items: flex-start;
 }
-ol li::marker {
+ol li::before {
+	content: counter(list-counter) ".";
 	color: var(--clr-rose-800);
 	font-weight: var(--fw-body-600);
-	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+} */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+h3 + p {
+	padding: 1em 0;
+}
+td {
+	border-bottom: 1px solid #ccc;
+	padding: 1em;
+}
+.measurements {
+	font-weight: var(--fw-body-700);
+	color: var(--clr-rose-800);
 }
