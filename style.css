@@ -81,7 +81,7 @@ ul li {
 	align-items: center;
 	line-height: 1.5;
 }
-ul > li::before {
+ul li::before {
 	content: "\2022";
 	font-size: 1em;
 	color: var(--clr-rose-800);
@@ -136,11 +136,14 @@ td {
 }
 .attribution {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding-top: 1rem;
 	padding-bottom: 2rem;
+}
+.attribution > div {
+	padding-bottom: 0.5em;
 }
 .attribution a {
 	color: var(--clr-rose-800);
@@ -161,8 +164,5 @@ td {
 	}
 	.recipe-page {
 		padding: 2em;
-	}
-	.attribution {
-		flex-direction: column;
 	}
 }
