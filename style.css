@@ -60,6 +60,7 @@ h3 {
 }
 .dish-name > p {
 	padding-bottom: 1em;
+	color: var(--clr-stone-900);
 }
 .prep-time {
 	background-color: var(--clr-rose-50);
@@ -67,10 +68,11 @@ h3 {
 	border-radius: 10px;
 	margin: 1rem 0 1.5rem 0;
 }
-.prep-time h4 {
+.prep-time p {
 	color: var(--clr-rose-800);
 	font-family: var(--ff-body);
 	padding-bottom: 0.5em;
+	font-weight: var(--fw-body-700);
 }
 ul {
 	list-style-type: none;
@@ -79,6 +81,7 @@ ul {
 ul li {
 	display: flex;
 	align-items: center;
+	padding: 0.5em 0;
 	line-height: 1.5;
 }
 ul li::before {
@@ -93,6 +96,7 @@ span {
 	font-weight: var(--fw-body-600);
 	margin-right: 0.2em;
 	display: inline;
+	color: var(--clr-stone-900);
 }
 .ingredients ul {
 	padding: 1rem 0 1.2rem 0;
@@ -109,7 +113,8 @@ ol {
 ol li {
 	counter-increment: item;
 	position: relative;
-	padding: 0.5em 0 0 1.5em;
+	padding: 1em 0 0 1.5em;
+	line-height: 1.5;
 }
 ol li::before {
 	content: counter(item) ".";
